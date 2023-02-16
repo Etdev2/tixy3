@@ -1,10 +1,11 @@
 import React from 'react'
+// the route is /dashboard/settings/page
+
+
 
 function page() {
   return (
-    <div>
-        I am an about page
-    </div>
+    <div>page</div>
   )
 }
 
