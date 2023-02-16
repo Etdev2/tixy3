@@ -1,14 +1,19 @@
-import React from "react"
-import Header from "./Header"
+import React from 'react'
+import Header from './Header'
 
 function page() {
-	return (
-		<div>
-			<Header />
-
-			<h1 className="text-xl text-red-600 text-bold">I AM a Home page</h1>
-		</div>
-	)
+  return (
+    <div>
+      <Header />
+      <div className=''>
+        <div className='items-center flex flex-col
+        '>
+        <h1 className="text-blue-500 ">Page</h1>
+        </div>
+      
+      </div>
+    </div>
+  )
 }
 
 export default page

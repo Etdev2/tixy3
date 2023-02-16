@@ -5,8 +5,8 @@ module.exports = {
     config.module.rules.push({
       test: /\.svg$/,
       use: [{ loader: '@svgr/webpack', options: { icon: true } }],
-    });
-    return config;
+    })
+    return config
   },
   experimental: {
     appDir: true,
@@ -14,4 +14,4 @@ module.exports = {
   images: {
     domains: ['acdhwdunlmjletxnddzq.supabase.co'],
   },
-};
+}
