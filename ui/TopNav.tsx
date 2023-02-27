@@ -2,13 +2,13 @@ import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 
 
-const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
+const currencies = ['MEX', 'USD', 'AUD', 'EUR', 'GBP']
 
 export default function TopNav() {
   return (
     <header>
       <div className="bg-gray-900">
-        <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Currency selector */}
           <form>
             <div>
