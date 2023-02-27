@@ -90,6 +90,7 @@ export interface Database {
           updated_at?: string | null
         }
       }
+      
       order_items: {
         Row: {
           color: string | null

@@ -1,6 +1,8 @@
 import React from 'react'
 import supabase from '@/lib/supabase'
 
+
+
 async function page() {
   const { data, error } = await supabase.from('products').select('*')
 
