@@ -74,6 +74,7 @@ export interface Database {
           id: string
           name: string | null
           updated_at: string | null
+          urlpath: string | null
         }
         Insert: {
           created_at?: string | null
