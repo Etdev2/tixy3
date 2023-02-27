@@ -1,14 +1,17 @@
 export type Product = {
-  id: number
-  name: string
-  description: string
-  image?: string
-  imageBlur?: string
-  isBestSeller?: boolean
-  leadTime?: number
-  price: Price
-  discount?: Discount
-  isAvailable: boolean
+  id: string;
+  stock: number;
+  rating: number;
+  name: string;
+  description: string;
+  price: Price;
+  isBestSeller: boolean;
+  leadTime: number;
+  image?: string;
+  imageBlur?: string;
+  discount?: Discount;
+  usedPrice?: UsedPrice;
+
 }
 
 type Price = {
@@ -27,3 +30,10 @@ type Discount = {
   percent: number
   expires?: number
 }
+
+type UsedPrice = {
+  amount: number;
+  currency: Currency;
+  scale: number;
+};
+

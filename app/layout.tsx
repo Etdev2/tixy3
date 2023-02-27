@@ -1,6 +1,9 @@
 import '../styles/globals.css'
 import { Inter } from '@next/font/google'
-import GlobalNav from '@/ui/Global.Nav'
+import GlobalNav from '@/ui/GlobalNav'
+import TopNav from '@/ui/TopNav'
+
+
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
 
       <body>
+        <TopNav/>
         <GlobalNav/>
+        <div>{children}</div>
       </body>
     </html>
   )
