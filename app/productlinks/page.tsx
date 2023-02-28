@@ -2,6 +2,7 @@ import React from 'react'
 import supabase from '@/lib/supabase'
 import Navlinks from './Navlinks'
 import Link from 'next/link'
+import Cat from './Navlinks'
 
 // add types for urlpath
 
@@ -23,6 +24,12 @@ export default async function Products() {
           </div>
         ))}
        
+      </div>
+
+
+      <div>
+         {/* @ts-expect-error Server Component */}
+       <Cat/>
       </div>
     </div>
   )
