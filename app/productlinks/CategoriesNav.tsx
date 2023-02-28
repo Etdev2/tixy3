@@ -2,7 +2,7 @@ import React from 'react'
 import supabase from '@/lib/supabase'
 import Link from 'next/link'
 
-export default async function Cat() {
+export default async function CategoriesNav() {
   const { data } = await supabase.from('categories').select()
   if (!data) {
     throw new Error('No data')
@@ -11,10 +11,10 @@ export default async function Cat() {
 
   return (
     <div>
-      <div className="flex justify-center  text-green-700 capitalize space-x-10 ">
+      <div className="flex justify-center  text-pink-500 capitalize space-x-10 text-3xl mt-3">
         {data.map((item) => (
           <div key={item.id}>
-            <Link href={`/products/${item.urlpath}`}>{item.name}</Link>
+            <Link href={`/productlinks/${item.categoriesSlug}`}>{item.name}</Link>
           </div>
         ))}
       </div>

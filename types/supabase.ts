@@ -1,10 +1,4 @@
-export type Json =
-  | string
-  | number
-  | boolean
-  | null
-  | { [key: string]: Json }
-  | Json[]
+export type Json = string | number | boolean | null | { [key: string]: Json } | Json[]
 
 export interface Database {
   public: {
@@ -74,7 +68,7 @@ export interface Database {
           id: string
           name: string | null
           updated_at: string | null
-          urlpath: string | null
+          categoriesSlug: string | null
         }
         Insert: {
           created_at?: string | null
@@ -91,7 +85,7 @@ export interface Database {
           updated_at?: string | null
         }
       }
-      
+
       order_items: {
         Row: {
           color: string | null
@@ -473,21 +467,21 @@ export interface Database {
           email: string
           id: string
           stripe_customer_id: string | null
-          subscription_tier: Database["public"]["Enums"]["subscription_tier"]
+          subscription_tier: Database['public']['Enums']['subscription_tier']
         }
         Insert: {
           created_at?: string
           email: string
           id: string
           stripe_customer_id?: string | null
-          subscription_tier?: Database["public"]["Enums"]["subscription_tier"]
+          subscription_tier?: Database['public']['Enums']['subscription_tier']
         }
         Update: {
           created_at?: string
           email?: string
           id?: string
           stripe_customer_id?: string | null
-          subscription_tier?: Database["public"]["Enums"]["subscription_tier"]
+          subscription_tier?: Database['public']['Enums']['subscription_tier']
         }
       }
       z2_categories: {
@@ -533,11 +527,11 @@ export interface Database {
       }
     }
     Enums: {
-      color_t: "blue" | "red" | "gray" | "black"
-      subscription_tier: "FREE" | "STADARD" | "PREMIUM"
-      subscription_tier_test: "FREE" | "STADARD" | "PREMIUM"
-      test_type: "FREE" | "STADARD" | "PREMIUM"
-      tier: "FREE" | "STADARD" | "PREMIUM"
+      color_t: 'blue' | 'red' | 'gray' | 'black'
+      subscription_tier: 'FREE' | 'STADARD' | 'PREMIUM'
+      subscription_tier_test: 'FREE' | 'STADARD' | 'PREMIUM'
+      test_type: 'FREE' | 'STADARD' | 'PREMIUM'
+      tier: 'FREE' | 'STADARD' | 'PREMIUM'
     }
     CompositeTypes: {
       [_ in never]: never

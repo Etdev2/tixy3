@@ -7,5 +7,8 @@ export default async function Categories({ params: { categoriesSlug } }: { param
     .select('*,product_subcategories(*)')
     .eq('categoriesSlug', categoriesSlug)
     .single()
+
+  console.log(categories)
+
   return <pre>{JSON.stringify(categories, null, 2)}</pre>
 }

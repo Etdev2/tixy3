@@ -1,10 +1,10 @@
 import React from 'react'
 import supabase from '@/lib/supabase'
-import Navlinks from './Navlinks'
+import Navlinks from './CategoriesNav'
 import Link from 'next/link'
-import Cat from './Navlinks'
+import CategoriesNav from './CategoriesNav'
 
-// add types for urlpath
+// add types for categoriesSlug
 
 export default async function Products() {
   const { data } = await supabase.from('categories').select()
@@ -16,20 +16,9 @@ export default async function Products() {
 
   return (
     <div>
-   
-      <div className='flex justify-center  text-pink-400 capitalize space-x-10 '>
-      {data.map((item) => (
-          <div key={item.id} >
-            <Link href={`/products/${item.urlpath}`}>{item.name}</Link>
-          </div>
-        ))}
-       
-      </div>
-
-
-      <div>
-         {/* @ts-expect-error Server Component */}
-       <Cat/>
+      <div className="flex justify-center  text-orange-400 capitalize space-x-10 text-3xl text-bold mt-4">
+        {' '}
+        I am the page{' '}
       </div>
     </div>
   )
