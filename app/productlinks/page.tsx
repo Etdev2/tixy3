@@ -16,7 +16,7 @@ export default async function Products() {
 
   return (
     <div>
-      <div className="flex justify-center  text-orange-400 capitalize space-x-10 text-3xl text-bold mt-4">
+      <div className="flex justify-center  text-pink-400 capitalize space-x-10 text-3xl text-bold mt-4">
         {' '}
         I am the page{' '}
       </div>

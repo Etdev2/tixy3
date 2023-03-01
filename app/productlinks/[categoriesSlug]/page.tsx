@@ -10,5 +10,10 @@ export default async function Categories({ params: { categoriesSlug } }: { param
 
   console.log(categories)
 
-  return <pre>{JSON.stringify(categories, null, 2)}</pre>
+  return (
+    <div>
+        <h1 className='text-xl  flex justify-center text-green-400'>I am the product sub categories page</h1>
+      <pre>{JSON.stringify(categories, null, 2)}</pre>
+    </div>
+  )
 }
