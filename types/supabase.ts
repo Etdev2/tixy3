@@ -69,6 +69,8 @@ export interface Database {
           name: string | null
           updated_at: string | null
           categoriesSlug: string | null
+          
+
         }
         Insert: {
           created_at?: string | null

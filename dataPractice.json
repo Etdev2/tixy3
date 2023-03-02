@@ -1,0 +1,235 @@
+[
+    {
+      "id": "7db631d2-2a7b-4d87-a5e1-0d6e8d26dfdd",
+      "name": "Top Water",
+      "description": "Our top water category is like the perfect joke - it will have those fish jumping and gasping for air in no time!",
+      "created_at": null,
+      "updated_at": null,
+      "categoriesSlug": "topwater",
+      "product_subcategories": [
+        {
+          "id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+          "category_id": "7db631d2-2a7b-4d87-a5e1-0d6e8d26dfdd",
+          "name": "Topwater Stick-baits",
+          "description": "Our topwater stick-baits are like the fish version of playing hard to get - they will drive those fish wild and have them begging for more!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "stickbaits",
+          "products": [
+            {
+              "id": "22343d64-4c4c-4f0b-b672-27d46c8b7cf4",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Crystal Blue Mackerel",
+              "description": "This fishing lure is like a crystal blue ocean, so clear and inviting that even the fish can't resist!",
+              "price": 17.99,
+              "image_url": "https://example.com/karnage-crystal-blue-mackerel.jpg",
+              "alt": "Karnage Crystal Blue Mackerel",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            },
+            {
+              "id": "2f3deccc-1c96-4413-8c7d-522d5536e71c",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Green Mackerel",
+              "description": "This fishing lure is like a green machine, with a realistic fish-scale pattern that will make those fish think they're looking at a real meal!",
+              "price": 14.99,
+              "image_url": "https://example.com/karnage-green-mackerel.jpg",
+              "alt": "Karnage Green Mackerel",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            },
+            {
+              "id": "b6d0b6cb-b05b-4361-a129-68e9790976dc",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Lava Mackerel",
+              "description": "This fishing lure is like a fiery ball of love, so hot it will have those fish begging for more!",
+              "price": 12.99,
+              "image_url": "https://example.com/karnage-lava-mackerel.jpg",
+              "alt": "Karnage Lava Mackerel",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            },
+            {
+              "id": "3e7b322f-8e96-49e6-b15a-ea029f9878b3",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Garaboldi",
+              "description": "This fishing lure is like a crazy ex, with multiple hooks that will keep those fish coming back for more, no matter how hard they try to resist!",
+              "price": 16.99,
+              "image_url": "https://example.com/karnage-garaboldi.jpg",
+              "alt": "Karnage Garaboldi",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            },
+            {
+              "id": "d6056b1f-7945-4dc5-83c5-6ee5d5b1db5e",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Chrome",
+              "description": "This chrome fishing lure is so shiny, it could blind a fish. Perfect for catching those elusive big ones!",
+              "price": 9.99,
+              "image_url": "https://example.com/karnage-chrome.jpg",
+              "alt": "Karnage Chrome Fishing Lure",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            },
+            {
+              "id": "bf1b2c47-8aeb-48f2-a0d3-90e45af8a1a2",
+              "product_subcategory_id": "b8c5eaf2-09b1-481d-ae64-522ca7c3c3b7",
+              "name": "Karnage Abalone",
+              "description": "This abalone-shell fishing lure is so lifelike, you might catch a mermaid instead of a fish! A must-have for any serious angler.",
+              "price": 12.99,
+              "image_url": "https://example.com/karnage-abalone.jpg",
+              "alt": "Karnage Abalone Fishing Lure",
+              "created_at": null,
+              "updated_at": null,
+              "inventory_level": null,
+              "average_rating": null,
+              "productpath": null
+            }
+          ]
+        },
+        {
+          "id": "c1aa22ec-78d8-4fb7-a5a5-b5c1e238a1c2",
+          "category_id": "7db631d2-2a7b-4d87-a5e1-0d6e8d26dfdd",
+          "name": "Surface-Irons",
+          "description": "Our surface-iron lures are like the perfect wingman - they will help you catch that fish you have had your eye on and leave you feeling like a true player!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "surfaceirons",
+          "products": []
+        },
+        {
+          "id": "a0df4ab4-6e69-4f0c-b540-95f88b91d9ba",
+          "category_id": "7db631d2-2a7b-4d87-a5e1-0d6e8d26dfdd",
+          "name": "Poppers",
+          "description": "These popping lures are so good, they are like a hot bowl of fish soup that will have those fish saying \"damn, that is some good eats\"!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "poppers",
+          "products": []
+        }
+      ]
+    },
+    {
+      "id": "f905d6de-7bb4-4a70-ba5d-0515ed166f5f",
+      "name": "Clothing",
+      "description": "Our clothing category is like the perfect outfit - it will have you looking good and feeling good, so you can focus on reeling in those big ones!",
+      "created_at": null,
+      "updated_at": null,
+      "categoriesSlug": "clothing",
+      "product_subcategories": [
+        {
+          "id": "d2c6b734-c80c-4d30-934b-ec4076cb0f6a",
+          "category_id": "f905d6de-7bb4-4a70-ba5d-0515ed166f5f",
+          "name": "T-Shirts",
+          "description": "Our fishing-themed shirts are like the ultimate power move - they will have you looking so fly, even those fish will want to hang out with you!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "tshirts",
+          "products": []
+        },
+        {
+          "id": "e6c8f6cf-87f2-4dd2-92a2-2a406ab59d9c",
+          "category_id": "f905d6de-7bb4-4a70-ba5d-0515ed166f5f",
+          "name": "Hats",
+          "description": "Our fishing-themed hats are like the perfect accessory - they will keep the sun out of your eyes and have you looking cool as a cucumber!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "hats",
+          "products": []
+        },
+        {
+          "id": "f7b829c8-6e1e-436f-a60b-ec9accaebbe6",
+          "category_id": "f905d6de-7bb4-4a70-ba5d-0515ed166f5f",
+          "name": "Activewear",
+          "description": "Our fishing-themed activewear is like the perfect workout buddy - they will have you reeling in those compliments while you reel in those fish!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "activewear",
+          "products": []
+        }
+      ]
+    },
+    {
+      "id": "9bb6ad90-6dc4-4f4e-8e7d-19c82a559b6f",
+      "name": "Trolling",
+      "description": "Our trolling category is like the ultimate road trip - sit back, relax, and let those fish come to you!",
+      "created_at": null,
+      "updated_at": null,
+      "categoriesSlug": "trolling",
+      "product_subcategories": [
+        {
+          "id": "76f17475-7ca9-4470-9f9e-1803d3c3d408",
+          "category_id": "9bb6ad90-6dc4-4f4e-8e7d-19c82a559b6f",
+          "name": "Cider Plugs",
+          "description": "These cider plugs are like the fish version of liquid courage - they will make those fish so happy, they will forget all about that other bait they had their eye on!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "ciderplugs",
+          "products": []
+        },
+        {
+          "id": "b5de5b5a-3115-4b5d-a680-04c7ee4e2670",
+          "category_id": "9bb6ad90-6dc4-4f4e-8e7d-19c82a559b6f",
+          "name": "High-Speed Tuna/Wahoo Lures",
+          "description": "Our high-speed lures are like the perfect one-liner - they will catch those fish before they even know what hit them!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "highspeedlures",
+          "products": []
+        },
+        {
+          "id": "731d27c5-0f4d-4f96-9b4e-4d9c31e6ba8c",
+          "category_id": "9bb6ad90-6dc4-4f4e-8e7d-19c82a559b6f",
+          "name": "Yo-Yo Irons",
+          "description": "These yo-yo iron lures are like the perfect dance partner - they will have you up and down and all around until you are reeling in those fish!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "yoyo",
+          "products": []
+        },
+        {
+          "id": "ee98c184-2825-4330-9da7-1b93e75ca7bb",
+          "category_id": "9bb6ad90-6dc4-4f4e-8e7d-19c82a559b6f",
+          "name": "Weighted Stick-baits",
+          "description": "Our weighted stick-bait lures are like the ultimate pick-up line - they will get those picky fish to bite like it is their last meal!",
+          "created_at": null,
+          "updated_at": null,
+          "subcategoriesSlug": "weightedsticks",
+          "products": []
+        }
+      ]
+    },
+    {
+      "id": "bc0ba548-bd72-49e7-b883-6bbd59de46e3",
+      "name": "New Arrivals",
+      "description": "Our new arrivals category is like the ultimate surprise party - you never know what you are going to get, but it is always guaranteed to be a good time!",
+      "created_at": null,
+      "updated_at": null,
+      "categoriesSlug": "newarrivals",
+      "product_subcategories": []
+    },
+    {
+      "id": "441c8d37-d79f-4ef1-8a2d-8a57974018ed",
+      "name": "Jigs\n",
+      "description": "Our jigs category is like the perfect dance party - let those jigs move and groove, and those fish will be ready to boogie all night long!",
+      "created_at": null,
+      "updated_at": null,
+      "categoriesSlug": "jigs",
+      "product_subcategories": []
+    }
+  ]

@@ -4,7 +4,6 @@
 import SubCategoriesNavLinks from "./SubCatergoriesNavLinks"
 
 
-
 export default function productLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
@@ -14,10 +13,8 @@ export default function productLayout({ children }: { children: React.ReactNode 
       </h1>
     
       <div className="flex justify-center text-xl text-green-600">
-            {/* @ts-expect-error Server Component */}
-            
+          {/* @ts-expect-error Server Component */}
       <SubCategoriesNavLinks/>
-    
       </div>
       <div>{children}</div>
     </div>

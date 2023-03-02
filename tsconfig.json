@@ -22,9 +22,13 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "#/*": ["./*"]
+      "#/*": ["./*"],
+      "app/*": ["./app/*"],
+      "components/*": ["./components/*"],
+      "config/*": ["./config/*"],
+      "constants/*": ["./constants/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/productlinks/[categoriesSlug]/TestNav.js"],
   "exclude": ["node_modules"]
 }
