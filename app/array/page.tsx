@@ -45,8 +45,12 @@ export default async function Page() {
     category.product_subcategories.map((subcategory: any) => subcategory.name)
   )
 
+  const slugSubName = data?.flatMap((category: any) =>
+  category.product_subcategories.map((subcategory: any) => subcategory.subcategoriesSlug)
+)
+
   console.log(name)
   console.log(subcategoryNames)
-
+    console.log(slugSubName)
   return <div>{subcategoryNames}</div>
 }
