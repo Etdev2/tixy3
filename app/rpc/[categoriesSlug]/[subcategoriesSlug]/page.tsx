@@ -7,5 +7,7 @@ export default async function Categories({ params: { subcategoriesSlug } }: { pa
     .select('*,products(*)')
     .eq('subcategoriesSlug', subcategoriesSlug)
     .single()
-  return <pre>{JSON.stringify(categories, null, 2)}</pre>
+  return <pre>
+    
+    {JSON.stringify(categories, null, 2)}</pre>
 }

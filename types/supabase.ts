@@ -334,7 +334,7 @@ export interface Database {
           alt?: string | null
           average_rating?: number | null
           description?: string | null
-          id: string
+          id?: string
           image_url?: string | null
           inventory_level?: number | null
           name?: string | null
@@ -562,6 +562,13 @@ export interface Database {
           subcategory_slug: string
         }[]
       }
+      get_category_info: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          name: string
+          categoryslug: string
+        }[]
+      }
       get_catname_subslug: {
         Args: Record<PropertyKey, never>
         Returns: {
@@ -575,6 +582,29 @@ export interface Database {
           id: number
           name: string | null
         }[]
+      }
+      get_product_info: {
+        Args: Record<PropertyKey, never>
+        Returns: Database["public"]["CompositeTypes"]["productinfo"][]
+      }
+      get_subcategories_and_categories: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          subcategory_name: string
+          category_slug: string
+        }[]
+      }
+      get_subcategory_info: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          name: string
+          subcategoryslug: string
+          categoryslug: string
+        }[]
+      }
+      get_subcategory_info2: {
+        Args: Record<PropertyKey, never>
+        Returns: Database["public"]["CompositeTypes"]["subcategoryinfo"][]
       }
       getcatsubslug: {
         Args: Record<PropertyKey, never>
@@ -611,7 +641,17 @@ export interface Database {
       tier: "FREE" | "STADARD" | "PREMIUM"
     }
     CompositeTypes: {
-      [_ in never]: never
+      productinfo: {
+        name: string
+        productslug: string
+        subcategoriesslug: string
+        categoriesslug: string
+      }
+      subcategoryinfo: {
+        name: string
+        subcategoriesslug: string
+        categoriesslug: string
+      }
     }
   }
 }

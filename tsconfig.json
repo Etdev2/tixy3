@@ -27,6 +27,7 @@
       "components/*": ["./components/*"],
       "config/*": ["./config/*"],
       "constants/*": ["./constants/*"],
+      "lib/*": ["./lib/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/productlinks/[categoriesSlug]/TestNav.js"],
