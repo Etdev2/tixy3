@@ -1,4 +1,10 @@
-export type Json = string | number | boolean | null | { [key: string]: Json } | Json[]
+export type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | { [key: string]: Json }
+  | Json[]
 
 export interface Database {
   public: {
@@ -63,31 +69,27 @@ export interface Database {
       }
       categories: {
         Row: {
-          created_at: string | null
+          categoriesSlug: string | null
           description: string | null
           id: string
           name: string | null
-          updated_at: string | null
-          categoriesSlug: string | null
-          
-
+          src: string | null
         }
         Insert: {
-          created_at?: string | null
+          categoriesSlug?: string | null
           description?: string | null
           id: string
           name?: string | null
-          updated_at?: string | null
+          src?: string | null
         }
         Update: {
-          created_at?: string | null
+          categoriesSlug?: string | null
           description?: string | null
           id?: string
           name?: string | null
-          updated_at?: string | null
+          src?: string | null
         }
       }
-
       order_items: {
         Row: {
           color: string | null
@@ -147,6 +149,54 @@ export interface Database {
           total_price?: number | null
           updated_at?: string | null
           user_id?: string | null
+        }
+      }
+      people: {
+        Row: {
+          id: number
+          name: string | null
+          planet_id: number | null
+        }
+        Insert: {
+          id?: number
+          name?: string | null
+          planet_id?: number | null
+        }
+        Update: {
+          id?: number
+          name?: string | null
+          planet_id?: number | null
+        }
+      }
+      planets: {
+        Row: {
+          id: number
+          name: string | null
+        }
+        Insert: {
+          id?: number
+          name?: string | null
+        }
+        Update: {
+          id?: number
+          name?: string | null
+        }
+      }
+      post: {
+        Row: {
+          created_at: string
+          id: string
+          title: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          title?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          title?: string | null
         }
       }
       product_colors: {
@@ -220,28 +270,28 @@ export interface Database {
       }
       product_subcategories: {
         Row: {
-          category_id: string
-          created_at: string | null
+          category_id: string | null
           description: string | null
           id: string
           name: string | null
-          updated_at: string | null
+          src: string | null
+          subcategoriesSlug: string | null
         }
         Insert: {
-          category_id: string
-          created_at?: string | null
-          description?: string | null
-          id: string
-          name?: string | null
-          updated_at?: string | null
-        }
-        Update: {
-          category_id?: string
-          created_at?: string | null
+          category_id?: string | null
           description?: string | null
           id?: string
           name?: string | null
-          updated_at?: string | null
+          src?: string | null
+          subcategoriesSlug?: string | null
+        }
+        Update: {
+          category_id?: string | null
+          description?: string | null
+          id?: string
+          name?: string | null
+          src?: string | null
+          subcategoriesSlug?: string | null
         }
       }
       product_weights: {
@@ -271,7 +321,6 @@ export interface Database {
         Row: {
           alt: string | null
           average_rating: number | null
-          created_at: string | null
           description: string | null
           id: string
           image_url: string | null
@@ -279,12 +328,11 @@ export interface Database {
           name: string | null
           price: number | null
           product_subcategory_id: string | null
-          updated_at: string | null
+          productSlug: string | null
         }
         Insert: {
           alt?: string | null
           average_rating?: number | null
-          created_at?: string | null
           description?: string | null
           id: string
           image_url?: string | null
@@ -292,12 +340,11 @@ export interface Database {
           name?: string | null
           price?: number | null
           product_subcategory_id?: string | null
-          updated_at?: string | null
+          productSlug?: string | null
         }
         Update: {
           alt?: string | null
           average_rating?: number | null
-          created_at?: string | null
           description?: string | null
           id?: string
           image_url?: string | null
@@ -305,7 +352,7 @@ export interface Database {
           name?: string | null
           price?: number | null
           product_subcategory_id?: string | null
-          updated_at?: string | null
+          productSlug?: string | null
         }
       }
       users: {
@@ -469,21 +516,21 @@ export interface Database {
           email: string
           id: string
           stripe_customer_id: string | null
-          subscription_tier: Database['public']['Enums']['subscription_tier']
+          subscription_tier: Database["public"]["Enums"]["subscription_tier"]
         }
         Insert: {
           created_at?: string
           email: string
           id: string
           stripe_customer_id?: string | null
-          subscription_tier?: Database['public']['Enums']['subscription_tier']
+          subscription_tier?: Database["public"]["Enums"]["subscription_tier"]
         }
         Update: {
           created_at?: string
           email?: string
           id?: string
           stripe_customer_id?: string | null
-          subscription_tier?: Database['public']['Enums']['subscription_tier']
+          subscription_tier?: Database["public"]["Enums"]["subscription_tier"]
         }
       }
       z2_categories: {
@@ -508,6 +555,34 @@ export interface Database {
       [_ in never]: never
     }
     Functions: {
+      get_categories_and_subcategories: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          category_name: string
+          subcategory_slug: string
+        }[]
+      }
+      get_catname_subslug: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          category_name: string
+          subcategory_slug: string
+        }[]
+      }
+      get_planets: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          id: number
+          name: string | null
+        }[]
+      }
+      getcatsubslug: {
+        Args: Record<PropertyKey, never>
+        Returns: {
+          category_name: string
+          subcategory_slug: string
+        }[]
+      }
       getpagecat: {
         Args: Record<PropertyKey, never>
         Returns: {
@@ -529,11 +604,11 @@ export interface Database {
       }
     }
     Enums: {
-      color_t: 'blue' | 'red' | 'gray' | 'black'
-      subscription_tier: 'FREE' | 'STADARD' | 'PREMIUM'
-      subscription_tier_test: 'FREE' | 'STADARD' | 'PREMIUM'
-      test_type: 'FREE' | 'STADARD' | 'PREMIUM'
-      tier: 'FREE' | 'STADARD' | 'PREMIUM'
+      color_t: "blue" | "red" | "gray" | "black"
+      subscription_tier: "FREE" | "STADARD" | "PREMIUM"
+      subscription_tier_test: "FREE" | "STADARD" | "PREMIUM"
+      test_type: "FREE" | "STADARD" | "PREMIUM"
+      tier: "FREE" | "STADARD" | "PREMIUM"
     }
     CompositeTypes: {
       [_ in never]: never

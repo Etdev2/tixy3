@@ -1,14 +1,12 @@
-import React, { Fragment } from 'react'
 import supabase from '@/lib/supabase'
+import React from 'react'
 
-export default async function Products() {
+export default async function page() {
   const { data } = await supabase.from('categories').select()
- 
-  console.log(data)
 
   return (
     <div>
-      I am a page
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   )
 }

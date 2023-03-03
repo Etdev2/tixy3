@@ -14,7 +14,7 @@ export default async function CategoriesNav() {
       <div className="flex justify-center  text-pink-500 capitalize space-x-10 text-3xl mt-3">
         {data.map((item) => (
           <div key={item.id}>
-            <Link href={`/productlinks/${item.categoriesSlug}`}>{item.name}</Link>
+            <Link href={`/pro/${item.categoriesSlug}`}>{item.name}</Link>
           </div>
         ))}
       </div>
