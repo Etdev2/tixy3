@@ -7,7 +7,7 @@ export default async function Categories({ params: { subcategoriesSlug } }: { pa
     .select('*,products(*)')
     .eq('subcategoriesSlug', subcategoriesSlug)
     .single()
-  return <pre>
+  return <pre  className="mx-auto max-w-7xl px-8">
     
     {JSON.stringify(categories, null, 2)}</pre>
 }

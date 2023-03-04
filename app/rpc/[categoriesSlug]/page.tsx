@@ -7,7 +7,7 @@ export default async function Categories({ params: { categoriesSlug } }: { param
     .select('*,product_subcategories(*)')
     .eq('categoriesSlug', categoriesSlug)
     .single()
-  return <pre>
+  return <pre className="mx-auto max-w-7xl px-8">
     <h1>layer2</h1>
     
     {JSON.stringify(categories, null, 2)}</pre>

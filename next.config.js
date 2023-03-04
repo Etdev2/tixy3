@@ -14,6 +14,6 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ['acdhwdunlmjletxnddzq.supabase.co'],
+    domains: ['acdhwdunlmjletxnddzq.supabase.co','tailwindui.com'],
   },
 }
